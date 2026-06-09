@@ -1,0 +1,134 @@
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, #1db954);
+  background-size: 400% 400%;
+  animation: bgMove 12s ease infinite;
+}
+.card {
+  border-radius: 25px;
+  padding: 20px;
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #ff512f, #dd2476, #1db954);
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.6),
+    inset 0 0 20px rgba(255,255,255,0.1);
+}
+#album {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+#album:hover {
+  transform: scale(1.05);
+}
+#progress {
+  appearance: none;
+  height: 5px;
+  border-radius: 10px;
+  background: #444;
+  outline: none;
+}
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #1db954;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn {
+  color: white;
+}
+
+.btn i {
+  font-size: 18px;
+}
+
+#playpausebtn {
+  background: #1db954;
+  color: black;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+}
+
+#playpausebtn:hover {
+  transform: scale(1.1);
+}
+#heartIcon {
+  transition: 0.3s;
+}
+
+#heartIcon.fa-solid {
+  color: red;
+  transform: scale(1.2);
+}
+.listitems li,
+.listitems-right li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.listitems li:hover,
+.listitems-right li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.listitems img,
+.listitems-right img {
+  border-radius: 8px;
+}
+.active-song {
+  background: #1db954 !important;
+  color: black;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+.offcanvas {
+  background: #121212;
+  color: white;
+}
+.offcanvas-header {
+  border-bottom: 1px solid #333;
+}
+
+.shuffle-off {
+  opacity: 0.4;
+
+}
+
+.shuffle-on {
+  opacity: 1;
+  /* Spotify green */
+}
+
+.repeat-all {
+  opacity: 1;
+}
+.repeat-off {
+  opacity: 0.4;
+}
+
+.space-bottom{
+ margin-bottom:10px;
+ cursor: pointer;
+}
+.listitems{
+  list-style-type: none;
+}
+.listitems-right{
+  list-style-type: none;
+}
